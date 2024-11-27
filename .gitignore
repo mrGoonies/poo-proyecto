@@ -1,0 +1,10 @@
+# Entorno Virtualj
+.venv
+
+# Variables de entorno
+.env
+
+# Pythons
+*.pyc
+*.pyo
+__pycache__/
