@@ -1,0 +1,23 @@
+@startuml
+class Crucero {
+    - id: int
+    - nombre: str
+    - capacidad: int
+    - empresa: str
+    - pais_origen: str
+
+    +__init__(): void
+    +__str__(): str
+
+}
+
+class GestionCrucero {
+    +agregar_crucero(crucer: Crucero): void
+    +listar_cruceros(): str
+    +modificar_info_crucero(crucero: Crucero): void
+    +eliminar_crucero(id_crucero: int): str
+}
+
+GestionCrucero --> Crucero
+
+@enduml
